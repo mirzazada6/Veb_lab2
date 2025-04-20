@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Irana Mirzazada - Resume</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.5; }
+        .resume-container { display: flex; max-width: 1000px; margin: 0 auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        .left-column { width: 35%; background: #4446cc; padding: 30px; color: white; }
+        .right-column { width: 65%; padding: 30px; background: white; color: #070707; }
+        .profile-container { text-align: center; margin-bottom: 20px; }
+        .profile-pic { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 5px solid white; box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+        .name { font-size: 24px; font-weight: bold; margin: 5px 0; text-transform: uppercase; text-align: center; }
+        .title { font-size: 16px; color: #e0e0e0; margin-bottom: 20px; text-transform: uppercase; text-align: center; }
+        .section-header { font-size: 18px; font-weight: bold; border-bottom: 2px solid; padding-bottom: 5px; margin: 25px 0 15px; text-transform: uppercase; }
+        .left-column .section-header { color: white; border-color: white; }
+        .right-column .section-header { color: #070707; border-color: #070707; }
+        .contact-info p, .education-date, .education-degree, .language, .profile-text, .job-title, .job-description, .reference-item { font-size: 14px; margin: 5px 0; }
+        .education-school, .company-name, .reference-name { font-weight: bold; }
+        .skills-list { display: flex; flex-wrap: wrap; gap: 8px; }
+        .skill { background: rgba(255,255,255,0.2); padding: 5px 10px; border-radius: 3px; font-size: 14px; }
+        .job-description ul { padding-left: 20px; margin: 5px 0; }
+        button { position: absolute; top: 0; right: 0; padding: 4px 8px; border: none; border-radius: 5px; background: #4CAF50; color: white; cursor: pointer; font-size: 12px; }
+        button:hover { background: #45a049; }
+        .education-section, .skills-section, .experience-section { position: relative; }
+        .education-item, .work-item { margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="left-column">
+            <div class="profile-container">
+                <img src="https://via.placeholder.com/200" alt="profile picture" class="profile-pic">
+                <div class="name">Irana Mirzazada</div>
+                <div class="title">Marketing Manager</div>
+            </div>
+            
+            <div class="section-header">Contact</div>
+            <div class="contact-info">
+                <p>+123-456-7890</p>
+                <p>hello@reallygreatsite.com</p>
+                <p>123 Anywhere St., Any City</p>
+                <p>www.reallygreatsite.com</p>
+            </div>
+            
+            <div class="education-section">
+                <div class="section-header">Education</div>
+                <button onclick="addEducation()">Add</button>
+                <div class="education-item">
+                    <div class="education-date">2029 - 2030</div>
+                    <div class="education-school">WARDIERE UNIVERSITY</div>
+                    <div class="education-degree">Master of Business Management</div>
+                </div>
+                <div class="education-item">
+                    <div class="education-date">2025 - 2029</div>
+                    <div class="education-school">WARDIERE UNIVERSITY</div>
+                    <div class="education-degree">Bachelor of Business</div>
+                    <div class="education-degree">GPA: 3.8 / 4.0</div>
+                </div>
+            </div>
+            
+            <div class="skills-section">
+                <div class="section-header">Skills</div>
+                <button onclick="addSkill()">Add</button>
+                <div class="skills-list">
+                    <div class="skill">Project Management</div>
+                    <div class="skill">Public Relations</div>
+                    <div class="skill">Teamwork</div>
+                    <div class="skill">Time Management</div>
+                    <div class="skill">Leadership</div>
+                    <div class="skill">Effective Communication</div>
+                    <div class="skill">Critical Thinking</div>
+                </div>
+            </div>
+            
+            <div class="section-header">Languages</div>
+            <div class="language">English (Fluent)</div>
+            <div class="language">French (Fluent)</div>
+            <div class="language">German (Basics)</div>
+            <div class="language">Spanish (Intermediate)</div>
+        </div>
+        
+        <div class="right-column">
+            <div class="section-header">Profile</div>
+            <p class="profile-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation. Ut enim ad minim veniam quis nostrud exercitation.
+            </p>
+            
+            <div class="experience-section">
+                <div class="section-header">Work Experience</div>
+                <button onclick="addExperience()">Add</button>
+                <div class="work-item">
+                    <div class="company-name">Borcelle Studio</div>
+                    <div class="job-title">Marketing Manager & Specialist</div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Develop and execute comprehensive marketing strategies and campaigns that align with the company's goals and objectives.</li>
+                            <li>Lead, mentor, and manage a high-performing marketing team, fostering a collaborative and results-driven work environment.</li>
+                            <li>Monitor brand consistency across marketing channels and materials.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="work-item">
+                    <div class="company-name">Fauget Studio</div>
+                    <div class="job-title">Marketing Manager & Specialist</div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Create and manage the marketing budget, ensuring efficient allocation of resources and optimizing ROI.</li>
+                            <li>Oversee market research to identify emerging trends, customer needs, and competitor strategies.</li>
+                            <li>Monitor brand consistency across marketing channels and materials.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="work-item">
+                    <div class="company-name">Studio Shodwe</div>
+                    <div class="job-title">Marketing Manager & Specialist</div>
+                    <div class="job-description">
+                        <ul>
+                            <li>Develop and maintain strong relationships with partners, agencies, and vendors to support marketing initiatives.</li>
+                            <li>Monitor and maintain brand consistency across all marketing channels and materials.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-header">Reference</div>
+            <div class="reference-item">
+                <div class="reference-name">Estelle Darcy</div>
+                <div class="reference-position">Wardiere Inc. / CTO</div>
+                <div>Phone: 123-456-7890</div>
+                <div>Email: hello@reallygreatsite.com</div>
+            </div>
+            <div class="reference-item">
+                <div class="reference-name">Harper Richard</div>
+                <div class="reference-position">Wardiere Inc. / CEO</div>
+                <div>Phone: 123-456-7890</div>
+                <div>Email: hello@reallygreatsite.com</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function addExperience() {
+            const company = prompt("Company name:");
+            if (!company) return;
+            
+            const position = prompt("Position:");
+            if (!position) return;
+            
+            const responsibilities = [];
+            while (true) {
+                const resp = prompt("Responsibility (leave empty to finish):");
+                if (!resp) break;
+                responsibilities.push(resp);
+            }
+            
+            if (!responsibilities.length) {
+                alert("At least one responsibility required");
+                return;
+            }
+            
+            const newExp = document.createElement('div');
+            newExp.className = 'work-item';
+            newExp.innerHTML = `
+                <div class="company-name">${company}</div>
+                <div class="job-title">${position}</div>
+                <div class="job-description">
+                    <ul>${responsibilities.map(r => `<li>${r}</li>`).join('')}</ul>
+                </div>
+            `;
+            document.querySelector('.experience-section').appendChild(newExp);
+        }
+        
+        function addEducation() {
+            const years = prompt("Years (e.g., 2025-2029):");
+            const school = prompt("School:");
+            const degree = prompt("Degree:");
+            if (!years || !school || !degree) return;
+            
+            const gpa = prompt("GPA (optional):");
+            
+            const newEdu = document.createElement('div');
+            newEdu.className = 'education-item';
+            newEdu.innerHTML = `
+                <div class="education-date">${years}</div>
+                <div class="education-school">${school}</div>
+                <div class="education-degree">${degree}</div>
+                ${gpa ? `<div class="education-degree">GPA: ${gpa}</div>` : ''}
+            `;
+            document.querySelector('.education-section').appendChild(newEdu);
+        }
+        
+        function addSkill() {
+            const skill = prompt("New skill:");
+            if (!skill) return;
+            
+            const newSkill = document.createElement('div');
+            newSkill.className = 'skill';
+            newSkill.textContent = skill;
+            document.querySelector('.skills-list').appendChild(newSkill);
+        }
+    </script>
+</body>
+</html>
