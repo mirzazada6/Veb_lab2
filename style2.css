@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+.resume-container {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.left-column {
+    width: 35%;
+    background: #4446cc;
+    padding: 30px;
+    color: white;
+}
+.right-column {
+    width: 65%;
+    padding: 30px;
+    background: white;
+    color: #070707;
+}
+.profile-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 5px 0;
+    text-transform: uppercase;
+    text-align: center;
+}
+.title {
+    font-size: 16px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.section-header {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+    margin: 25px 0 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.left-column .section-header {
+    color: white;
+    border-color: white;
+}
+.right-column .section-header {
+    color: #070707;
+    border-color: #070707;
+}
+.contact-info p, .education-date, .education-degree, .language, .profile-text, .job-title, .job-description, .reference-item {
+    font-size: 14px;
+    margin: 5px 0;
+}
+.education-school, .company-name, .reference-name {
+    font-weight: bold;
+}
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.skill {
+    background: rgba(255,255,255,0.2);
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.job-description ul {
+    padding-left: 20px;
+    margin: 5px 0;
+}
+button {
+    margin-top: 5px;
+    padding: 4px 8px;
+    border: none;
+    border-radius: 5px;
+    background: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+button:hover {
+    background: #45a049;
+}
+.dropdown-wrapper {
+    margin-bottom: 20px;
+} 
